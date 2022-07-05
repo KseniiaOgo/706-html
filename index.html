@@ -1,13 +1,106 @@
 <!DOCTYPE html>
-<html lang="ru"> 
-<head> 
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <meta name="author" content="Kseniia Ohorodnyk"> 
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kseniia Ohorodnyk">
     <title>HTML sample</title>
 </head>
+
 <body>
     <h1>Hello HTML</h1>
-    <img src="img/scheme.png" alt="scheme">
+    <h2>Hello HTML2</h2>
+    <h3>Hello HTML3</h3>
+    <h4>Hello HTML4</h4>
+    <h5>Hello HTML5</h5>
+    <h6>Hello HTML6</h6>
+
+    <div><figure>
+        <img src="img/scheme.png" alt="scheme" style="width:300px">
+        <figcaption>Рicture 1. Scheme of CSS positioning</figcaption>
+        </figure>
+    </div>
+
+    <article>
+        <header>
+          <h2>Header of article</h2>
+        </header>
+        <main>
+        <p><mark>Lorem ipsum dolor sit amet consectetur adipisicing elit.</mark> Enim odit voluptatibus unde quaerat veritatis voluptatum quod ratione accusamus, laboriosam magnam inventore iusto soluta quas facere totam qui molestias fuga vel?</p></main>
+     </article>
+    <hr>
+
+    <div>
+        <p>Unordered list:</p>
+        <ul>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+        </ul>
+    </div>
+
+    <div><p>Ordered list:</p>
+        <ol>
+            <li>list item 1</li>
+            <li>list item 2</li>
+            <li>list item 3</li>
+         </ol>
+    </div>
+
+    <form action="url-where-you-want-to-submit-form-data">
+        <div>
+            <label>Enter Your Name: <input type="text" name="name" required /></label>
+            <label>Enter Your Email: <input type="email" name="email" required /></label>
+            <label>Create Password: <input type="password" name="password" pattern="[a-z0-5]{8,}" required /></label>
+        </div>
+
+        <div>
+            <p>Please choose the option</p>
+            <label for="option 1"><input type="radio" id="option 1" name="radio example" value="option 1" checked>Option
+                1</input></label>
+            <label for="option 2"><input type="radio" id="option 2" name="radio example" value="option 2">Option
+                2</input></label>
+            <label for="option 3"><input type="radio" id="option 3" name="radio example" value="option 3">Option
+                3</input></label>
+        </div>
+
+        <div>
+            <p>Please choose the option</p>
+            <label for="checkbox 1"><input type="checkbox" id="checkbox 1" name="checkbox example" value="option 1">Option
+                1</input></label>
+            <label for="checkbox 2"><input type="checkbox" id="checkbox 2" name="checkbox example" value="option 2">Option
+                2</input></label>
+            <label for="checkbox 3"><input type="checkbox" id="checkbox 3" name="checkbox example" value="option 3">Option
+                3</input></label>
+        </div>
+        
+        <label>Upload a picture: <input type="file" name="file" /></label>
+        
+        <label>Please select:
+            <select name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </select>
+        </label>
+
+        <label>Please comment:
+            <textarea name="comment" rows="3" cols="20" placeholder="Please write your comment.."></textarea>
+        </label>
+        
+        <a href="https://softserve.academy/course" alt="link">Link</a>
+        
+        <div><button type="submit">Submit</button></div>
+    </form>
+
+    <footer>
+    <address>
+        Ukraine, Kyiv<br>
+        Bandery street, 24<br>
+        02002
+      </address>
+    </footer>
 </body>
+
 </html>
